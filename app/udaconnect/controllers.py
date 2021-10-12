@@ -47,7 +47,7 @@ class ConnectionDataResource(Resource):
             person_id=int(person_id),
             start_date=start_date,
             end_date=end_date,
-            meters=distance
+            meters=int(distance)
         ))
         # Float timestamp needs to be converted to datetime here.
         # Could be improved
